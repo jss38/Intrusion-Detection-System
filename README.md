@@ -39,29 +39,6 @@ The stateless implementation (`ids_stateless/`) performs pattern matching on ind
 - Mininet for network emulation
 - Python with Scapy library for packet generation and analysis
 
-## Usage
-
-1. Build the P4 program:
-   ```
-   cd ids_stateful  # or ids_stateless
-   make
-   ```
-
-2. Run the controller to monitor traffic:
-   ```
-   python controller.py
-   ```
-
-3. Send test packets:
-   ```
-   python send.py <destination_ip>
-   ```
-
-4. Read register values:
-   ```
-   python reg_read.py
-   ```
-
 ## Testing
 
 The project includes scripts to generate test traffic with various patterns to evaluate the effectiveness of the IDS implementations. The `send.py` script creates packets with different payload patterns to test detection capabilities.
