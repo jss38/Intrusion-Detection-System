@@ -2,29 +2,6 @@
 
 This repository contains implementations of both stateful and stateless Intrusion Detection Systems using the P4 programming language. The project demonstrates network traffic monitoring and attack detection using programmable data planes.
 
-## Project Structure
-
-The repository is organized into two main directories:
-
-- `ids_stateful/`: Implementation of a stateful IDS that maintains flow state
-- `ids_stateless/`: Implementation of a stateless IDS that performs pattern matching without maintaining state
-
-Each directory contains the following components:
-
-- `p4src/`: P4 source code for the IDS implementation
-  - `program.p4`: Main P4 program defining packet processing logic
-  - `program.json`: Compiled P4 program
-  - `program.p4i`: Intermediate representation
-- `controller.py`: Python script for packet handling and monitoring
-- `network.py`: Network topology definition
-- `send.py`: Script to generate and send test packets
-- `reg_read.py`: Utility to read register values from the P4 switch
-- `s1-commands.txt`, `s2-commands.txt`, `s3-commands.txt`: Switch configuration commands
-- `Makefile`: Build automation
-- `topology.json`: Network topology configuration
-- `log/`: Directory for log files
-- `pcap/`: Directory for packet capture files
-
 ## Stateful vs. Stateless IDS
 
 ### Stateful IDS
